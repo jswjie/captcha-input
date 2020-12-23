@@ -1,10 +1,14 @@
 {
   "name": "captcha-input",
   "version": "0.1.0",
-  "private": true,
+  "main": "dist/CaptchaInput.umd.min.js",
+  "description": "验证码输入框",
+  "keywords": ["vue3", "captcha"],
+  "author": "jswangjie",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --inline-vue --name CapachaInput src/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",

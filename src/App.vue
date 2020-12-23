@@ -1,15 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <img alt="Vue logo" src="./assets/logo.png">
+  <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+  <captcha-input v-model:captcha="captcha"></captcha-input>
 </template>
 
 <script>
+import { ref, watch } from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+  },
+  setup() {
+    const captcha = ref('')
+
+    watch(captcha, val => {
+      console.log(val)
+    })
+
+    return{
+      captcha
+    }
   }
 }
 </script>
