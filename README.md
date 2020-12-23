@@ -1,7 +1,7 @@
 # captcha-input
 
 ## 简介
-验证码输入框
+验证码输入框，目前只支持vue3
 
 ## 快速开始
 ### 1.安装（需要设置npm源为npm.segma.tech）

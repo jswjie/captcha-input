@@ -1,10 +1,12 @@
 {
   "name": "captcha-input",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "dist/CaptchaInput.umd.min.js",
   "description": "验证码输入框",
   "keywords": ["vue3", "captcha"],
   "author": "jswangjie",
+  "git-repository": "git@github.com:jswjie/captcha-input.git",
+  "license": "ISC",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
